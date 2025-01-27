@@ -1,0 +1,38 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+.general{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.amount_div{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    width: 30%;
+}
+.amount{
+   font-size:30px;
+   margin-top: 20px;
+}
+.amount_show,.total_amount_show,.period_show{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+/* .percent_show{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+} */
+.percent{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    
+}
+.p1,.p2,.p3,.p4,.p5{
+    font-size: 20px;
+}

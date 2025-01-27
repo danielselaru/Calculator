@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="general">
+        <div class="amount_div">
+            <div>
+                <label for="amount">Amount requested:</label>
+                <input type="range" min="0" max="5000" id="amount" class="amount" value="100">
+            </div>
+            <div>
+                <label for="period">Choose period:</label>
+                <input type="range" min="1" max="24" id="period" class="period" value="1">
+            </div>
+        </div>
+
+        <div>
+            <div class="amount_show"></div>
+            <div class="period_show"></div>
+
+        </div>
+        <div>
+            <div class="total_amount_show"></div>
+            <!-- <div class="period"></div> -->
+            <!-- <div class="percent_show">Percent -->
+            <div class="percent"></div>
+            <!-- </div> -->
+
+        </div>
+    </div>
+    <div>
+        <p class="p1">Minimum loan amount 100 $</p>
+        <p class="p2">Maximum loan amount 5000 $</p>
+        <p class="p3">If you take out a loan for a period of more than six months, the interest rate drops by 0.5
+            percent</p>
+        <p class="p4">If you take out a loan for a period of more than twelve months, the interest rate drops by 1
+            percent</p>
+        <p class="p5">If you take a loan for two years, the interest rate drops by 1.5 percent</p>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
