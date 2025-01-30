@@ -10,13 +10,13 @@ amount.addEventListener("input",amount_fct);
 period.addEventListener("input",period_fct);
 
 
-
+let percent = 10
 
 function amount_fct(){
     const amount_input_value = Number(amount.value);
     console.log(amount_input_value);
     amount_show.innerHTML = `<p > Amount : ${amount_input_value} $</p>`
-    const total_amount_input_value = (amount_input_value * percent/100 + amount_input_value).toFixed(2);
+    const total_amount_input_value = amount_input_value * percent/100 + amount_input_value;
     console.log(total_amount_input_value)
     total_amount_show.innerHTML = `<p> Total amount : ${total_amount_input_value} $</p>`
     
@@ -38,7 +38,7 @@ function period_fct(){
             percent = 9.5;
             percent_div.innerHTML = `<p> Percent ${percent}</p>`
         } 
-        else if(period_value > 13 && period_value <= 23)
+        else if(period_value >= 13 && period_value <= 23)
         {
             percent = 9;
             percent_div.innerHTML = `<p> Percent ${percent}</p>`
